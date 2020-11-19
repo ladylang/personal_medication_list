@@ -1,0 +1,27 @@
+{
+  "name": "personal_medication_list",
+  "version": "1.0.0",
+  "description": "This is made as part of the Odin Project curriculum. It is my take on the Todo list.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladylang/personal_medication_list.git"
+  },
+  "keywords": [
+    "medication",
+    "list"
+  ],
+  "author": "TLB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladylang/personal_medication_list/issues"
+  },
+  "homepage": "https://github.com/ladylang/personal_medication_list#readme",
+  "devDependencies": {
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
