@@ -19,10 +19,31 @@ class medication {
 
 };
 
-//pull input data from html form to create new medication
+//when event listener to Add New Medication input button when clicked
+document.getElementById("addNewMedBtn").addEventListener('click', function() {
+
+    //pull input data from html form 
+    let nextMedName = document.getElementById("medication").value;
+    let nextDose = document.getElementById("dose").value;
+    let nextFrequency = document.getElementById("frequency").value;
+    let nextCondition = document.getElementById("condition").value;
+    let nextNotes = document.getElementById("notes").value;
+
+    //create new medication with pull data
+    let nextMedication = new medication (nextMedName, nextDose, nextFrequency, nextCondition, nextNotes);
+
+    //reset the form
+    document.getElementById("addMedForm").reset(); 
 
 
-//append new medication onto myMedicationList
+    //append new medication onto myMedicationList
+    myMedicationList.push(nextMedication);
+
+
+    console.log(myMedicationList);
+});
+
+
 
 
 export {medication, myMedicationList};
