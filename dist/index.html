@@ -4,8 +4,27 @@
         <title>personal medication list</title>
     </head>
     <body>
-        <div id="content">
+        <div id="mainContent">
+            <div id="addForm">
+                <label for="medication">Medication:</label>
+                <input type="text" id="medication" name="medication"><br>
 
+                <label for="dose">Dose:</label>
+                <input type="text" id="dose" name="dose"><br>
+
+                <label for="frequency">Frequency:</label>
+                <input type="text" id="frequency" name="frequency"><br>
+
+                <label for="condition">Condition:</label>
+                <input type="text" id="condition" name="condition"><br>
+
+                <input type="submit" value="Add New Medication"><br>
+
+                <button>ADD NEW LIST</button>
+            </div>
+            <div id="displayMedList">
+
+            </div>
         </div>
         <script src="main.js"></script>
     </body>

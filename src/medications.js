@@ -1,19 +1,28 @@
 
-const allMedicationList = [
-    {name: "first med", dose: "250 mg", frequency: "once daily", type: "BP", notes: "testing"}
+//default my Medication List 
+const myMedicationList = [
+    {name: "Multivitamin", dose: "1 tablet", frequency: "once daily", condition: "supplement", notes: "Are you taking one?"}
 ];
 
+
+
 class medication {
-    constructor(name, dose, frequency, type, notes) {
+    constructor(name, dose, frequency, condition, notes) {
         this.name = name;
         this.dose = dose;
         this.frequency = frequency;
-        this.type = type;
+        this.condition = condition;
         this.notes = notes;
-    }
+    };
+
+
 
 };
 
+//pull input data from html form to create new medication
 
 
-export {medication, allMedicationList};
+//append new medication onto myMedicationList
+
+
+export {medication, myMedicationList};
