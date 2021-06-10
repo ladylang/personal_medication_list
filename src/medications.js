@@ -15,8 +15,6 @@ class medication {
         this.notes = notes;
     };
 
-
-
 };
 
 //when event listener to Add New Medication input button when clicked
@@ -29,18 +27,27 @@ document.getElementById("addNewMedBtn").addEventListener('click', function() {
     let nextCondition = document.getElementById("condition").value;
     let nextNotes = document.getElementById("notes").value;
 
-    //create new medication with pull data
-    let nextMedication = new medication (nextMedName, nextDose, nextFrequency, nextCondition, nextNotes);
+    //check for required info from input data
+    if (nextMedName=="" || nextDose=="" || nextFrequency=="") {
 
-    //reset the form
-    document.getElementById("addMedForm").reset(); 
+        alert("Need more info!");
+
+    } else {
+        //create new medication with pull data
+        let nextMedication = new medication (nextMedName, nextDose, nextFrequency, nextCondition, nextNotes);
+
+        //reset the form
+        document.getElementById("addMedForm").reset(); 
+
+        //append new medication onto myMedicationList
+        myMedicationList.push(nextMedication);
+
+        console.log(myMedicationList);
+    };
 
 
-    //append new medication onto myMedicationList
-    myMedicationList.push(nextMedication);
 
 
-    console.log(myMedicationList);
 });
 
 
