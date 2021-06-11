@@ -1,9 +1,10 @@
+import {currentMedicationList} from "./newlist.js";
+
 
 //default my Medication List 
 const myMedicationList = [
     {name: "Multivitamin", dose: "1 tablet", frequency: "once daily", condition: "supplement", notes: "Are you taking one?"}
 ];
-
 
 
 class medication {
@@ -14,6 +15,13 @@ class medication {
         this.condition = condition;
         this.notes = notes;
     };
+
+
+    //edit medication
+
+
+    //delete medication
+
 
 };
 
