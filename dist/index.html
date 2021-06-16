@@ -6,6 +6,13 @@
     <body>
         <div id="mainContent">
             <div id="formDiv">
+                <form id="addMedListForm">
+                    <label for="list">Medication List:</label>
+                    <input type="text" id="medListName" name="medListName"><br>
+
+                    <button type="button" id="addNewListBtn">ADD NEW LIST</button><br>
+                </form>
+                
                 <form id="addMedForm">
                     <label for="medication">Medication:</label>
                     <input type="text" id="medication" name="medication"><br>
@@ -22,10 +29,9 @@
                     <label for="notes">Notes:</label>
                     <input type="text" id="notes" name="notes"><br>
 
-                    <input type="button" id="addNewMedBtn" value="Add New Medication"><br>
+                    <button type="button" id="addNewMedBtn">Add New Medication</button><br>
                 </form>
 
-                <button id="addNewListBtn">ADD NEW LIST</button>
             </div>
             <div id="displayMedList">
 
